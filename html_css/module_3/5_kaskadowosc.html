@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 2 - Selektory i kolor - Kaskadowość</title>
+
+        <!-- 1. Jednakowa specyficzność -->
+        <!-- <style>  
+            p {
+                color: red;
+                background-color: #000;
+            }
+
+            p {
+                color: blue;
+            }
+
+            p {
+                color: yellow;
+            }
+        </style> -->
+
+        <!-- 2. Specyficzność  -->
+        <!-- <style>
+            
+            /* 0 0 0 1 */
+            /* 1 */
+            p {
+            }
+
+            /* 0 0 0 2 */
+            /* 1 + 1 = 2 */
+            section p {
+            }
+
+            /* 0 1 0 0 */
+            /* 100 */
+            #test {
+            }
+
+            /* 0 1 0 1 */
+            /* 100 + 1 */
+            #test p {
+            }
+
+            /* 0 1 2 1 */
+            /* 100 + 10 + 1 + 10 */
+            #article.product a:hover {
+            }
+
+            /* 0 1 1 1 */
+            /* 100 + 10 + 1 */
+            #article.product a {
+            }
+        </style> -->
+
+        <!-- 3. !important -->
+        <!-- <style>
+            p#description {
+                color: red;
+            }
+
+            p {
+                color: black !important;
+            }
+        </style> -->
+
+        <!-- 4. Dziedziczenie -->
+        <!-- <style>
+            .product {
+                color: blue;
+                font-family: monospace;
+            }
+        </style> -->
+    </head>
+
+    <body>
+        <!-- 2. Specyficzność -->
+        <!-- <div>
+            <img src="https://textbook.edu.goit.global/html-css-a7u5xv/v1/pl/img/lesson-03/specificity.svg" />
+
+            <p>Wartość 1 (lub selektor czwartej rangi) - elementy(tagi) i pseudo elementy.</p>
+            <p>Wartość 10 (lub selektor trzeciej rangi) - klasy, atrybuty, pseudoklasy</p>
+            <p>Wartość 100 (lub selektor drugiej rangi) - id</p>
+            <p>Wartość 1000 (lub selektor pierwszej rangi) - inline</p>
+
+            <p style="color: red"></p>
+        </div> -->
+
+        <!-- 4. Dziedziczenie -->
+        <!-- <div class="product">
+            <h1>Super produkt</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum voluptatibus pariatur quis, dolor ipsam eveniet omnis nisi quibusdam
+                velit laudantium atque assumenda laboriosam consequuntur! Reiciendis omnis vel facere velit?
+            </p>
+
+            <a href="">Odwiedź stronę producenta!</a>
+
+            <button type="button">Kup mnie</button>
+        </div> -->
+    </body>
+</html>
