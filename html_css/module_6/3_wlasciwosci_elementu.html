@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 3 - Flexbox - Wlasciwosci elementu</title>
+
+        <style>
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-item {
+                background-color: red;
+            }
+        </style>
+
+        <!-- 1. flex-basis -->
+        <!-- <style>
+            .flex-item {
+                flex-basis: 25%;
+            }
+        </style> -->
+
+        <!-- 2. flex-grow -->
+        <!-- <style>
+            .flex-1 {
+                flex-basis: 200px;
+            }
+
+            .flex-2 {
+                flex-grow: 2;
+            }
+        </style> -->
+
+        <!-- 3. flex-shrink -->
+        <!-- <style>
+            .flex-2 {
+                flex-shrink: 0;
+            }
+        </style> -->
+
+        <!-- 4. align-self -->
+        <!-- <style>
+            .img-with-description {
+                display: flex;
+                width: 500px;
+            }
+
+            .img {
+                align-self: flex-start;
+                /* align-self: flex-end; */
+                /* align-self: center; */
+                /* align-self: stretch; */
+                /* align-self: baseline; */
+                /* align-self: auto; */
+            }
+        </style> -->
+
+        <!-- 5. order -->
+        <!-- <style>
+            div:not(.flex-container) {
+                padding: 10px;
+                border: 1px solid;
+            }
+
+            .flex-container {
+                display: flex;
+            }
+
+            .order-1 {
+                order: 1;
+            }
+
+            .order-2 {
+                order: 2;
+            }
+
+            .order-3 {
+                order: 3;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- 1. flex-basis -->
+        <!-- <div>
+            <div class="flex-container">
+                <p class="flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic
+                    blanditiis. Labore, dolore natus. Quis voluptatum animi saepe tempore tenetur quo.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- 2. flex-grow -->
+        <!-- <div>
+            <div class="flex-container">
+                <p class="flex-1 flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic
+                    blanditiis. Labore, dolore natus. Quis voluptatum animi saepe tempore tenetur quo.
+                </p>
+
+                <p class="flex-2 flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus!</p>
+
+                <p class="flex-1 flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic
+                    blanditiis. Labore, dolore natus. Quis voluptatum animi saepe tempore tenetur quo.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- 3. flex-shrink -->
+        <!-- <div>
+            <div class="flex-container">
+                <p class="flex-1 flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic
+                    blanditiis. Labore, dolore natus. Quis voluptatum animi saepe tempore tenetur quo.
+                </p>
+
+                <p class="flex-2 flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic blanditiis. Labore, dolore natus. Quis voluptatum animi
+                    saepe tempore tenetur quo.
+                </p>
+
+                <p class="flex-1 flex-item">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde at necessitatibus! Id doloribus, nihil temporibus est iure hic
+                    blanditiis. Labore, dolore natus. Quis voluptatum animi saepe tempore tenetur quo.
+                </p>
+            </div>
+        </div> -->
+
+        <!-- 4. align-self -->
+        <!-- <div>
+            <div class="img-with-description">
+                <img class="img" src="https://picsum.photos/640/480" alt="Losowy obraz z generatora obrazów" width="320" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime molestias commodi, harum debitis suscipit dolores veniam dolore iusto
+                    officiis, ullam itaque eaque aut dolorum. Eius nisi aperiam hic! Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime
+                    molestias commodi, harum debitis suscipit dolores veniam dolore iusto officiis, ullam itaque eaque aut dolorum. Eius nisi aperiam hic!
+                    Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime molestias commodi, harum debitis suscipit dolores veniam dolore
+                    iusto officiis, ullam itaque eaque aut dolorum. Eius nisi aperiam hic! Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                    maxime molestias commodi, harum debitis suscipit dolores veniam dolore iusto officiis, ullam itaque eaque aut dolorum. Eius nisi aperiam
+                    hic! Totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio maxime molestias commodi, harum debitis suscipit dolores veniam
+                    dolore iusto officiis, ullam itaque eaque aut dolorum. Eius nisi aperiam hic! Totam!
+                </p>
+            </div>
+        </div> -->
+
+        <!-- 5. order -->
+        <!-- <div class="flex-container">
+            <div class="order-1">1</div>
+            <div class="order-2">2</div>
+            <div class="order-3">3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div> -->
+    </body>
+</html>
