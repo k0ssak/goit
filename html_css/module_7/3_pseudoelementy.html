@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 4 - Dekoratywne efekty i elementy - Pseudoelementy</title>
+
+        <!-- 1. ::before and ::after -->
+        <!-- <style>
+            .text::before {
+                content: 'Przed';
+            }
+
+            .text::after {
+                content: 'Po';
+            }
+        </style> -->
+
+        <!-- 2. Uzycie -->
+        <!-- <style>
+            .hedgehog-list {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .hedgehog-list li {
+                display: flex;
+                align-items: center;
+            }
+
+            .hedgehog-list li::before {
+                content: '';
+                width: 32px;
+                height: 32px;
+                background: url('./img/jez.png') no-repeat;
+            }
+        </style> -->
+
+        <!-- 3. Funkcka attr i url -->
+        <!-- <style>
+            p::before {
+                content: url(https://picsum.photos/24/24);
+            }
+
+            p::before {
+                content: attr(data-src);
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- 1. ::before and ::after -->
+        <!-- <div>
+            <p class="text">Słowo</p>
+        </div> -->
+
+        <!-- 2. Uzycie -->
+        <!-- <ul class="hedgehog-list">
+            <li>Lorem ipsum</li>
+            <li>Dolor sit amet</li>
+            <li>Doloroo</li>
+        </ul> -->
+
+        <!-- 3. Funkcja attr -->
+        <!-- <div>
+            <p data-src="https://picsum.photos/24/24">Lorem ipsum</p>
+            <p data-src="https://picsum.photos/24/24">Lorem ipsum</p>
+        </div> -->
+    </body>
+</html>
