@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 4 - Dekoratywne efekty i elementy - Tło elementu</title>
+
+        <!-- 1. background-color -->
+        <!-- <style>
+            .primary-bg {
+                background-color: #3d6cd3;
+            }
+        </style> -->
+
+        <!-- 2. background-image -->
+        <!-- <style>
+            .animal-bg {
+                background-image: url('./img/jez.png');
+            }
+        </style> -->
+
+        <!-- 2.1 background-color and background-image -->
+        <!-- <style>
+            .secondary-bg {
+                background-color: #3d6cd3;
+                background-image: url('./img/jez.png');
+            }
+        </style> -->
+
+        <!-- 3. background-repeat -->
+        <!-- <style>
+            .animal-bg {
+                background-image: url('./img/jez.png');
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+            }
+
+            .repeat {
+                background-repeat: repeat;
+            }
+
+            .repeat-x {
+                background-repeat: repeat-x;
+            }
+
+            .repeat-y {
+                background-repeat: repeat-y;
+            }
+
+            .no-repeat {
+                background-repeat: no-repeat;
+            }
+        </style> -->
+
+        <!-- 4. background-position -->
+        <!-- <style>
+            .primary-bg {
+                background-image: url('./img/jez.png');
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+
+                background-position: 20px 20px;
+                background-repeat: no-repeat;
+
+                /* background-position: right bottom; */
+                /* background-position: left top; */
+                /* background-position: center center; */
+
+                /* offset */
+                /* background-position: right -10px bottom 20px; */
+            }
+        </style> -->
+
+        <!-- 5. background-size -->
+        <!-- <style>
+            .primary-bg {
+                background-image: url('https://picsum.photos/640/480');
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+                background-repeat: no-repeat;
+
+                /* background-size: auto auto; */
+                /* background-size: 200px; */
+                /* background-size: 50px 20px; */
+                /* background-size: contain; */
+                /* background-size: cover; */
+            }
+        </style> -->
+
+        <!-- 6. background-attachment -->
+        <!-- <style>
+            body {
+                background-image: url('https://picsum.photos/640/480');
+                background-attachment: fixed;
+            }
+        </style> -->
+
+        <!-- 7. tlo ma warstwy - ale raczej jest jak cebula -->
+        <!-- <style>
+            .primary-bg {
+                background-image: url('./img/jez.png'), url('https://picsum.photos/640/480');
+                background-position: top right, center;
+                background-repeat: no-repeat, no-repeat;
+
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+            }
+        </style> -->
+
+        <!-- 8. background -->
+        <!-- <style>
+            .primary-bg {
+                /* background: background-color background-image background-repeat background-position background-attachment */
+                background: url('./img/jez.png') repeat-x;
+                width: 200px;
+                height: 200px;
+                border: 1px solid;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- 1. background-color -->
+        <!-- <div class="primary-bg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse voluptate ad eligendi provident exercitationem omnis molestiae unde, dolorem
+            quis perferendis eos hic excepturi mollitia pariatur quaerat tenetur assumenda perspiciatis.
+        </div> -->
+
+        <!-- 2. background-image -->
+        <!-- <div class="animal-bg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea pariatur doloribus, illo quaerat debitis possimus provident dolor ullam recusandae
+            atque accusantium! Eaque nisi iusto vero cupiditate molestiae nemo, saepe voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Omnis ipsa dolore quae. Est excepturi nobis nihil hic mollitia porro eveniet et consequuntur doloribus, iure, non ad architecto blanditiis, sequi
+            veniam?
+        </div> -->
+
+        <!-- 2.1 background-color and background-image -->
+        <!-- <div class="secondary-bg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati esse voluptate ad eligendi provident exercitationem omnis molestiae unde, dolorem
+            quis perferendis eos hic excepturi mollitia pariatur quaerat tenetur assumenda perspiciatis.
+        </div> -->
+
+        <!-- 3. background-repeat -->
+        <!-- <div>
+            <div class="animal-bg repeat"></div>
+            <div class="animal-bg repeat-x"></div>
+            <div class="animal-bg repeat-y"></div>
+            <div class="animal-bg no-repeat"></div>
+        </div> -->
+
+        <!-- 4. background-position -->
+        <!-- <div class="primary-bg"></div> -->
+
+        <!-- 5. background-size -->
+        <!-- <div class="primary-bg"></div> -->
+
+        <!-- 6. background-attachment -->
+        <!-- <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi iure possimus! At sequi praesentium velit, commodi laudantium aliquam quae
+                quo temporibus cum ratione iusto ipsam maxime cumque veritatis nihil.
+            </p>
+        </div> -->
+
+        <!-- 7. tlo ma warsty -->
+        <!-- <div class="primary-bg"></div> -->
+
+        <!-- 8. background -->
+        <!-- <div class="primary-bg"></div> -->
+    </body>
+</html>

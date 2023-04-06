@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 4 - Grafika wektorowa - Plik SVG</title>
+
+        <style>
+            body {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80vw;
+                gap: 1rem;
+            }
+            svg {
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 1. Plik SVG -->
+        <!-- <img src="./imgs/test.svg" /> -->
+
+        <!-- 2. Viewbox  -->
+        <!-- viewBox="x y width height" -->
+        <!-- 1:1 -->
+        <!-- <svg width="400" height="200" viewBox="0 0 400 200">
+            <circle r="75" cx="50%" cy="50%" fill="tomato" />
+        </svg> -->
+
+        <!-- 2:1 -->
+        <!-- <svg width="400" height="200" viewBox="0 0 200 100">
+            <circle r="75" cx="50%" cy="50%" fill="tomato" />
+        </svg> -->
+
+        <!-- 1:2 -->
+        <!-- <svg width="400" height="200" viewBox="0 0 800 400">
+            <circle r="75" cx="50%" cy="50%" fill="tomato" />
+        </svg> -->
+
+        <!-- <div>
+            <div class="controls js-controls">
+                <label>
+                    x
+                    <input type="range" min="-400" max="400" name="x" />
+                </label>
+
+                <label>
+                    y
+                    <input type="range" min="-200" max="200" name="y" />
+                </label>
+
+                <label>
+                    width
+                    <input type="range" min="200" max="800" name="width" />
+                </label>
+
+                <label>
+                    height
+                    <input type="range" min="100" max="400" name="height" />
+                </label>
+
+                <code class="output js-output"
+                    >&lt;svg viewBox="<span data-x>0</span> <span data-y>0</span> <span data-width>0</span> <span data-height>0</span>"&gt;</code
+                >
+            </div>
+
+            <svg width="200" height="200">
+                <rect width="50" height="50" fill="#ff0000" stroke="black" stroke-width="1" x="20" y="20" rx="0" />
+                <rect width="100" height="100" fill="#00ff00" x="10" y="100" rx="5" />
+                <rect width="70" height="50" fill="yellow" stroke="black" stroke-width="1" x="60" y="20" rx="50" />
+                <rect width="70" height="50" fill="tomato" stroke="red" stroke-width="1" x="160" y="20" rx="50" />
+                <rect width="50" height="50" fill="purple" stroke="black" stroke-width="1" x="320" y="20" rx="0" />
+                <rect width="100" height="100" fill="green" x="310" y="100" rx="5" />
+                <rect width="70" height="50" fill="blue" stroke="black" stroke-width="1" x="20" y="220" rx="50" />
+                <rect width="70" height="50" fill="red" stroke="red" stroke-width="1" x="20" y="220" rx="50" />
+            </svg>
+
+            <svg class="js-vector" width="200" height="200" viewBox="0 0 200 200">
+                <rect width="50" height="50" fill="#ff0000" stroke="black" stroke-width="1" x="20" y="20" rx="0" />
+                <rect width="100" height="100" fill="#00ff00" x="10" y="100" rx="5" />
+                <rect width="70" height="50" fill="yellow" stroke="black" stroke-width="1" x="60" y="20" rx="50" />
+                <rect width="70" height="50" fill="tomato" stroke="red" stroke-width="1" x="160" y="20" rx="50" />
+                <rect width="50" height="50" fill="purple" stroke="black" stroke-width="1" x="320" y="20" rx="0" />
+                <rect width="100" height="100" fill="green" x="310" y="100" rx="5" />
+                <rect width="70" height="50" fill="blue" stroke="black" stroke-width="1" x="20" y="220" rx="50" />
+                <rect width="70" height="50" fill="red" stroke="red" stroke-width="1" x="20" y="220" rx="50" />
+            </svg>
+
+            <script>
+                const viewBoxState = {
+                    x: 0,
+                    y: 0,
+                    width: 200,
+                    height: 200,
+                };
+
+                const controlsRef = document.querySelector('.js-controls');
+                const outputXRef = document.querySelector('[data-x]');
+                const outputYRef = document.querySelector('[data-y]');
+                const outputWidthRef = document.querySelector('[data-width]');
+                const outputHeightRef = document.querySelector('[data-height]');
+                const svgRef = document.querySelector('.js-vector');
+
+                setOutput();
+                updateSVG();
+
+                controlsRef.addEventListener('input', (event) => {
+                    const { name, value } = event.target;
+                    viewBoxState[name] = value;
+                    setOutput();
+                    updateSVG();
+                });
+
+                function setOutput() {
+                    const { x, y, width, height } = viewBoxState;
+                    outputXRef.textContent = x;
+                    outputYRef.textContent = y;
+                    outputWidthRef.textContent = width;
+                    outputHeightRef.textContent = height;
+                }
+
+                function updateSVG() {
+                    const { x, y, width, height } = viewBoxState;
+                    svgRef.setAttribute('viewBox', `${x} ${y} ${width} ${height}`);
+                }
+            </script>
+        </div> -->
+    </body>
+</html>
