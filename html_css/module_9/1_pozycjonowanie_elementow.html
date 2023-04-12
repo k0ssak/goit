@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Pozycjonowanie elementów</title>
+
+        <style>
+            .container {
+                display: flex;
+            }
+
+            .box {
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                opacity: 0.4;
+            }
+        </style>
+
+        <!-- 1. position -->
+        <style>
+            .static {
+                position: static;
+                background-color: blue;
+            }
+
+            /* .relative {
+                position: relative;
+                background-color: green;
+            } */
+
+            /* .absolute {
+                position: absolute;
+                background-color: yellow;
+            } */
+
+            /* .fixed {
+                position: fixed;
+                background: purple;
+            } */
+        </style>
+
+        <!-- 2. position: relative -->
+        <style>
+            /* .relative-position {
+                position: relative;
+                top: 15px;
+                left: 15px;
+            } */
+
+            /* .relative-position {
+                position: relative;
+                bottom: 15px;
+                right: 15px;
+            } */
+
+            /* .relative-position {
+                position: relative;
+                top: -15px;
+                left: -15px;
+            } */
+        </style>
+
+        <!-- 2.1 position relative use case -->
+        <!-- <style>
+            .indicator {
+                position: relative;
+                left: 5px;
+                top: -4px;
+                color: red;
+            }
+        </style> -->
+
+        <!-- 3. position: absolute -->
+        <!-- <style>
+            .absolute-position-tl {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .absolute-position-tr {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .absolute-position-bl {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            .absolute-position-br {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .absolute-position-cc {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+        </style> -->
+
+        <!-- 3.1 relative container -->
+        <!-- <style>
+            .relative-container {
+                width: 300px;
+                height: 150px;
+                margin: 0 auto;
+                position: relative;
+            }
+        </style> -->
+
+        <!-- 3.2 relative-container img -->
+        <!-- <style>
+            .img-with-title {
+                position: relative;
+                display: inline-flex;
+            }
+
+            .img-title {
+                position: absolute;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.65);
+                color: #fff;
+                bottom: 0;
+                padding: 10px;
+                text-align: center;
+            }
+        </style> -->
+
+        <!-- 3.3 hint -->
+        <!-- <style>
+            .hint {
+                position: relative;
+                display: inline-block;
+            }
+
+            .hint:hover .hint-content {
+                display: block;
+            }
+
+            .hint-content {
+                position: absolute;
+                background-color: #2c2c38;
+                top: -12px;
+                border-radius: 5px;
+                color: #fff;
+                padding: 2px 5px;
+                font-size: 10px;
+                right: -35%;
+                display: none;
+            }
+        </style> -->
+
+        <!-- 4. position: fixed -->
+        <!-- <style>
+            .menu {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+
+            .footer {
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: blue;
+            }
+        </style> -->
+
+        <!-- 5. position: sticky -->
+        <!-- <style>
+            h2 {
+                position: sticky;
+                top: 0;
+                background-color: green;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- 1. position -->
+        <div>
+            <div class="box static">1</div>
+            <div class="box relative">2</div>
+            <div class="box absolute">3</div>
+            <div class="box fixed">4</div>
+            <span>lorem</span>
+        </div>
+
+        <!-- 2. position: relative -->
+        <!-- <div>
+            <div class="box"></div>
+            <div class="box relative-position"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div> -->
+
+        <!-- 2.1 position relative use case -->
+        <!-- <label for="name">
+            <span class="indicator">*</span> Imię:
+            <input type="text" />
+        </label> -->
+
+        <!-- 3. position: absolute -->
+        <!-- <div class="container">
+            <div class="box absolute-position-tl">top left</div>
+            <div class="box absolute-position-tr">top right</div>
+            <div class="box absolute-position-bl">bottom left</div>
+            <div class="box absolute-position-br">bottom right</div>
+            <div class="box absolute-position-cc">pseudo center center</div>
+        </div> -->
+
+        <!-- 3.1. relative-container -->
+        <!-- <div class="container relative-container">
+            <div class="box absolute-position-tl">top left</div>
+            <div class="box absolute-position-tr">top right</div>
+            <div class="box absolute-position-bl">bottom left</div>
+            <div class="box absolute-position-br">bottom right</div>
+            <div class="box absolute-position-cc">pseudo center center</div>
+        </div> -->
+
+        <!-- 3.2 relative-container img -->
+        <!-- <figure class="img-with-title">
+            <img src="https://picsum.photos/640/480" width="320" alt="Losowy obraz z generatora obrazów" />
+            <figcaption class="img-title">Losowy obrazek z internetu</figcaption>
+        </figure> -->
+
+        <!-- 3.3 hint -->
+        <!-- <p class="hint">
+            Proszę na mnie najechać kursorem
+            <span class="hint-content">Pojawiam się i znikam</span>
+        </p> -->
+
+        <!-- 4. position fixed -->
+        <!-- <div>
+            <nav class="menu">Menu</nav>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas harum
+                placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+            </p>
+            <nav class="footer">Stopka</nav>
+        </div> -->
+
+        <!-- 5. position: sticky -->
+        <!-- <div>
+            <section>
+                <h2>Lorem ispum</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+            </section>
+
+            <section>
+                <h2>Lorem ispum</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+            </section>
+
+            <section>
+                <h2>Lorem ispum</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique necessitatibus quod pariatur impedit, adipisci iste! Minus, voluptas
+                    harum placeat est, qui, expedita iure ipsam possimus sint itaque ex ea veniam.
+                </p>
+            </section>
+        </div> -->
+    </body>
+</html>
