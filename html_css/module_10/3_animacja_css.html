@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Animacja - Animacja CSS</title>
+
+        <style>
+            /* 1. deklaracja animacji */
+            /* @keyframes animationName {
+            }
+
+            @keyframes animatinoName {
+                0% {
+                }
+
+                100% {
+                }
+            }
+
+            @keyframes animationName {
+                from {
+                }
+
+                to {
+                }
+            }
+
+            @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            @keyframes changeBg {
+                0% {
+                    background-color: blue;
+                }
+
+                50% {
+                    background-color: pink;
+                }
+
+                100% {
+                    background-color: red;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+
+                animation-name: changeBg;
+                animation-duration: 6000ms;
+            } */
+
+            /* 2. animation-name i animation-duration */
+            /* @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+
+            .square:hover {
+                animation-name: changeBg;
+                animation-duration: 6000ms;
+            } */
+
+            /* 3. animation-timing function */
+            /* @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+
+            .square:hover {
+                animation-name: changeBg;
+                animation-duration: 6000ms;
+                animation-timing-function: ease-in;
+            } */
+
+            /* 4. animation-delay */
+            /* @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+
+            .square:hover {
+                animation-name: changeBg;
+                animation-duration: 6000ms;
+                animation-timing-function: ease-in;
+                animation-delay: 1s;
+            } */
+
+            /* 5. animation-iteration-count */
+            /* @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+
+            .square:hover {
+                animation-name: changeBg;
+                animation-duration: 500ms;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+            } */
+
+            /* 6. animation-direction */
+            /* @keyframes changeBg {
+                from {
+                    margin-left: 0;
+                }
+
+                to {
+                    margin-left: 200px;
+                }
+            }
+
+            .square {
+                animation-name: changeBg;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-direction: normal;
+            }
+
+            .square:nth-child(2) {
+                animation-direction: reverse;
+            }
+
+            .square:nth-child(3) {
+                animation-direction: alternate;
+            }
+
+            .square:nth-child(4) {
+                animation-direction: alternate-reverse;
+            } */
+
+            /* 7. animation-fill-mode */
+            /* @keyframes changeBg {
+                from {
+                    background-color: blue;
+                }
+
+                to {
+                    background-color: pink;
+                }
+            }
+
+            .square {
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+                animation-name: changeBg;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-fill-mode: none;
+            }
+
+            .square:nth-child(2) {
+                animation-fill-mode: forwards;
+            }
+
+            .square:nth-child(3) {
+                animation-fill-mode: backwards;
+            }
+
+            .square:nth-child(4) {
+                animation-fill-mode: both;
+            } */
+
+            /* 8. animation-play-state */
+            /* @keyframes changeBg {
+                from {
+                    margin-left: 0;
+                }
+
+                to {
+                    margin-left: 200px;
+                }
+            }
+
+            .square {
+                animation-name: changeBg;
+                animation-duration: 1s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-direction: normal;
+            }
+
+            .square:hover {
+                animation-play-state: paused;
+            }
+
+            .square:nth-child(2) {
+                animation-direction: reverse;
+            }
+
+            .square:nth-child(3) {
+                animation-direction: alternate;
+            }
+
+            .square:nth-child(4) {
+                animation-direction: alternate-reverse;
+            } */
+
+            /* 9. animation */
+            /* @keyframes changeBg {
+                from {
+                    margin-left: 0;
+                }
+
+                to {
+                    margin-left: 200px;
+                }
+            }
+
+            .square {
+                animation: changeBg 3s both infinite alternate ease-out 0.5s;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="square"></div>
+        <!-- <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div> -->
+    </body>
+</html>
