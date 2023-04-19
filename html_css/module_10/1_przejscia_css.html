@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Animacja - Przejścia CSS</title>
+
+        <style>
+            /* 1. Transition properties */
+            /* .square {
+                transition-property: width;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+                transition-delay: 0;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 300px;
+            } */
+
+            /* 2 transition-property */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+            /* .square {
+                transition-property: all;
+                transition-duration: 1s;
+            }
+
+            .square:hover {
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+            } */
+
+            /* .square {
+                transition-property: width, background-color;
+                transition-duration: 1s;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+            } */
+
+            /* 3. transition-duration */
+            /* .square {
+                transition-property: width;
+                transition-duration: 6s;
+                transition-duration: 0.1ms;
+                transition-duration: 200ms;
+                transition-duration: 0.2s;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 500px;
+            } */
+
+            /* 4. transition-timing-function */
+            /* .square {
+                transition-property: margin-left;
+                transition-duration: 3s;
+
+                width: 20px;
+                height: 20px;
+                margin-bottom: 10px;
+                margin-left: 0;
+            }
+
+            .square:nth-child(1) {
+                background-color: red;
+                transition-timing-function: ease;
+            }
+
+            .square:nth-child(2) {
+                background-color: blue;
+                transition-timing-function: ease-in;
+            }
+
+            .square:nth-child(3) {
+                background-color: blueviolet;
+                transition-timing-function: ease-in-out;
+            }
+
+            .square:nth-child(4) {
+                background-color: violet;
+                transition-timing-function: linear;
+            }
+
+            .square:nth-child(5) {
+                background-color: pink;
+                transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+            }
+
+            .square:nth-child(6) {
+                background-color: green;
+                transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            }
+
+            .square:nth-child(7) {
+                background-color: greenyellow;
+                transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            }
+
+            .square-container:hover .square {
+                margin-left: 200px;
+            } */
+
+            /* 5. transition-delay */
+            /* .square {
+                transition-property: width, background-color;
+                transition-duration: 1s;
+                transition-delay: 500ms;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 300px;
+                background-color: blue;
+            } */
+
+            /* 6. transition */
+            /* .square {
+                transition: width 0.2s ease-in, background-color 0.2s ease-in;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 300px;
+                background-color: blue;
+            } */
+
+            /* 7. multiple transitions */
+            /* .square {
+                transition: width 0.2s ease-in, background-color 0.2s ease-in 0.2s;
+
+                width: 100px;
+                height: 200px;
+                background-color: violet;
+            }
+
+            .square:hover {
+                width: 300px;
+                background-color: blue;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="square"></div>
+
+        <!-- 4 transition-timing-function -->
+        <!-- <div class="square-container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>  -->
+    </body>
+</html>

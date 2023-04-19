@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Page Title</title>
+
+        <style>
+            * {
+                margin: 0;
+            }
+
+            body {
+                margin: 20px;
+            }
+
+            .card {
+                width: 370px;
+                border: 1px solid #eeeeee;
+                background: #ffffff;
+            }
+
+            .img-container {
+                position: relative;
+            }
+
+            .img-container > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .card-description {
+                margin: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: rgba(33, 150, 243, 0.9);
+                padding: 10px;
+                color: #fff;
+            }
+
+            .card figcaption {
+                padding: 20px 24px;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+
+            /* animation */
+            .img-container {
+                overflow: hidden;
+            }
+
+            .card-description {
+                transform: translateY(100%);
+                transition: transform 0.3s ease-in;
+            }
+
+            .card:hover .card-description {
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <body>
+        <figure class="card">
+            <div class="img-container">
+                <img src="https://picsum.photos/640/480" alt="Losowy obraz z generatora obrazów" />
+
+                <p class="card-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum enim maiores perferendis porro minima repudiandae facilis sunt quae odit
+                    provident, saepe culpa accusantium suscipit in eos corrupti perspiciatis, qui distinctio.
+                </p>
+            </div>
+
+            <figcaption>
+                <p>Technocrack</p>
+                <small>Strona internetowa</small>
+            </figcaption>
+        </figure>
+    </body>
+</html>
