@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Elementy Formularzy - Textarea</title>
+
+        <style>
+            textarea {
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="email@email.com" />
+            </label>
+            <label>
+                Wiadomość
+                <textarea name="feedback" rows="10" cols="20" placeholder="Tutaj wpisz swoją wiadomosć">
+Przykladowa wiadomsoc 
+                </textarea>
+            </label>
+            <button type="submit">Wyślij</button>
+        </form>
+    </body>
+</html>

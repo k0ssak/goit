@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Elementy Formularzy - Grouping</title>
+    </head>
+    <body>
+        <!-- 1. legend and fieldset -->
+        <!-- <form>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+
+                <input type="text" />
+                <input type="text" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Dane billingowe</legend>
+
+                <input type="text" />
+                <input type="text" />
+            </fieldset>
+        </form> -->
+
+        <!-- 1.1 legend and fieldset -->
+        <!-- <form>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+
+                <label>
+                    Imię
+                    <input type="text" name="username" />
+                </label>
+            </fieldset>
+        </form> -->
+
+        <!-- 2. form with legend and fieldsets -->
+        <!-- <form>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label>
+                    Imię
+                    <input type="text" name="username" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Twoja ulubiona technologia</legend>
+                <label>
+                    <input type="checkbox" name="language" value="html" />
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="js" />
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="language" value="css" />
+                    CSS
+                </label>
+            </fieldset>
+
+            <button type="submit">Wyślij</button>
+        </form> -->
+
+        <!-- 3. better -->
+        <style>
+            input {
+                display: none;
+            }
+
+            input:checked + p {
+                display: block;
+            }
+
+            p {
+                display: none;
+            }
+        </style>
+
+        <div class="form-group" role="group" aria-labelledby="fav-tech">
+            <label for="test">Zwijacz</label>
+            <input id="test" type="checkbox" name="language" value="js" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam natus quo minima. Amet inventore cum recusandae, consectetur quidem iste.
+                Deleniti atque impedit excepturi aspernatur a, laboriosam ullam deserunt laudantium?
+            </p>
+        </div>
+    </body>
+</html>
