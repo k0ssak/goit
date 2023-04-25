@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 6 - Walidacja formularzy - Atrybuty walidacji</title>
+
+        <style>
+            html {
+                font-family: system-ui;
+            }
+
+            form {
+                max-width: 200px;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                border-radius: 5px;
+                border: 1px solid #cccccc;
+                padding: 10px;
+            }
+
+            label:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+
+            button {
+                background-color: rgb(37, 139, 37);
+                border: 0;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 1. required -->
+        <!-- <form>
+            <label>
+                Email
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" required />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 2. minlength, maxlength -->
+        <!-- <form>
+            <label>
+                Imię
+                <input type="name" name="name" required minlength="2" />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" required minlength="6" maxlength="20" />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 3. min, max -->
+        <!-- <form>
+            <label>
+                Ilość produktu
+                <input type="number" name="amount" required min="1" max="5" />
+            </label>
+
+            <button type="submit">Kup</button>
+        </form> -->
+
+        <!-- 4. pattern -->
+        <!-- <form>
+            <label>
+                Email <input type="text" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"" title="Musisz podać poprawny adres email" />
+            </label>
+            <label>
+                Hasło
+                <input
+                    type="password"
+                    name="password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                    title="Podaj conajmniej jedną dużą literę, 1 mała literę i 1 liczbę"
+                    required
+                />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+    </body>
+</html>
