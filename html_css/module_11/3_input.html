@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Elementy Formularzy - Input</title>
+
+        <style>
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            body {
+                margin: 5rem;
+            }
+
+            .checkbox {
+                display: inline-flex;
+                column-gap: 1rem;
+            }
+
+            .checkbox__control {
+                position: relative;
+                display: inline-flex;
+                flex: 0 0 auto;
+                width: 21px;
+                height: 21px;
+                border-radius: 2px;
+                transition: box-shadow 0.15s ease-in;
+            }
+
+            .checkbox__input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                clip: rect(1px, 1px, 1px, 1px);
+            }
+
+            .checkbox__label {
+                transition: background-color 0.2s ease-in, box-shadow 0.15s ease-in, border-color 0.15s ease-in;
+                display: block;
+                width: 100%;
+                background-color: #fff;
+                border: 1px solid #c0c7cf;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .checkbox__label::after {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 4px;
+                top: 3px;
+                width: 55%;
+                height: 40%;
+                transform: rotate(-52deg);
+                border-width: 0 0 2px 2px;
+                border-style: solid;
+                border-color: transparent;
+            }
+
+            .checkbox__label:hover {
+                box-shadow: 0 0 3px 0 #464fe5;
+                border-color: #464fe5;
+            }
+
+            .checkbox__input:checked + .checkbox__label {
+                border-color: #464fe5;
+                background-color: #464fe5;
+            }
+
+            .checkbox__input:checked + .checkbox__label::after {
+                border-color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="checkbox">
+            <div class="checkbox__control">
+                <input type="checkbox" id="check" name="check" value="1" class="checkbox__input" />
+                <label class="checkbox__label" for="check"></label>
+            </div>
+        </div> 
+        <!-- 1. input -->
+        <!-- <form>
+            <input type="text" name="username" />
+        </form> -->
+
+        <!-- 2. input placeholder -->
+        <!-- <form>
+            <input placeholder="Imię" type="text" name="username" />
+        </form> -->
+
+        <!-- 3. input type password -->
+        <!-- <form>
+            <input type="password" name="password" />
+        </form> -->
+
+        <!-- 3.1 input minlength i maxlength -->
+        <!-- <form>
+            <input type="password" name="password" minlength="14" maxlength="30" />
+        </form> -->
+
+        <!-- 4. input type email -->
+        <!-- <form>
+            <input type="email" name="newsletter_email" />
+        </form> -->
+
+        <!-- 5. input type radio -->
+        <!-- <form>
+            <p>Wybierz ulubiony zespół:</p>
+            <label>
+                <input type="radio" name="band" value="slayer" />
+                Slayer
+            </label>
+            <label>
+                <input type="radio" name="band" value="metallica" />
+                Metallica
+            </label>
+            <label>
+                <input type="radio" name="band" value="megadeath" checked />
+                Megadeath
+            </label>
+            <label>
+                <input type="radio" name="band" value="anthrax" />
+                Anthrax
+            </label>
+
+            <input type="text" name="firstname" value="Karol" />
+        </form> -->
+
+        <!-- 6. input type checkbox  -->
+        <!-- <form>
+            <p>Technologie które znam</p>
+            <label>
+                <input type="checkbox" name="technologies1" value="js" />
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" name="technologies2" value="html" checked />
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="technologies3" value="css" checked />
+                CSS
+            </label>
+        </form> -->
+
+        <!-- 7. input type number -->
+        <form>
+            <label>
+                Ile ważysz?
+                <input type="number" name="weight" value="66" min="1" max="300" />
+            </label>
+        </form>
+
+        <!-- 7.1 input type number - step -->
+        <form>
+            <label>
+                Ile ważysz?
+                <input type="number" name="weight" min="1" max="300" step="0.5" />
+            </label>
+        </form>
+
+        <!-- 8. input type tel -->
+        <!-- <form>
+            <label>
+                Telefon
+                <input type="tel" name="phone" />
+            </label>
+        </form> -->
+
+        <!-- 9. input type range -->
+        <!-- <label>
+            Kwota pożyczki
+            <input type="range" name="loan" value="40" min="0" max="10000" step="1000" />
+        </label> -->
+
+        <!-- 9. input dates -->
+        <!-- <form>
+            <label>
+                Podaj datę urodzenia
+                <input type="date" min="1920-01-01" max="2020-01-01" /> </label
+            ><br />
+
+            <label>
+                Podaj czas startu pracy
+                <input type="time" /><br />
+            </label>
+
+            <label>
+                Podaj termin wizyty
+                <input type="datetime-local" min="1920-01-01T00:00" max="2020-01-01T00:00" />
+            </label>
+
+            <button type="submit">Submit</button>
+        </form> -->
+
+        <!-- 10. bonus -->
+        <!-- <input type="checkbox" value="1" />
+        <br />
+         
+    </body>
+</html>

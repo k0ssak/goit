@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 5 - Elementy Formularzy - Select</title>
+    </head>
+    <body>
+        <!-- 1. select -->
+        <!-- <form>
+            <p>Wybierz ulubiony zespół:</p>
+            <select name="band">
+                <option value="slayer">Slayer</option>
+                <option value="metallica">Metallica</option>
+                <option value="megadeath">Megadeath</option>
+            </select>
+        </form> -->
+
+        <!-- 1.1 option selected -->
+        <!-- <form>
+            <p>Wybierz ulubiony zespół:</p>
+            <select name="band">
+                <option value="slayer">Slayer</option>
+                <option value="metallica" selected>Metallica</option>
+                <option value="megadeath">Megadeath</option>
+            </select>
+        </form> -->
+
+        <!-- 2. optgroup -->
+        <form>
+            <label for="cars">Samochody</label>
+            <select name="cars" id="cars">
+                <optgroup label="Volvo">
+                    <option value="xc40">XC40</option>
+                    <option value="xc60">XC60</option>
+                    <option value="xc90">XC90</option>
+                </optgroup>
+
+                <optgroup label="Audi">
+                    <option value="a4">A4</option>
+                    <option value="a6">A6</option>
+                    <option value="a8">A8</option>
+                </optgroup>
+            </select>
+        </form>
+    </body>
+</html>
