@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 6 - Metodologia BEM - Blok</title>
+    </head>
+
+    <body>
+        <!-- 1. Blok -->
+        <article class="post"></article>
+        <nav class="search"></nav>
+        <div class="gallery"></div>
+        <section class="container"></section>
+        <header class="post-header"></header>
+
+        <!-- 2. Tag nie ma znaczenia -->
+        <div class="search"></div>
+        <nav class="search"></nav>
+        <section class="search"></section>
+        <article class="search"></article>
+        <p class="search"></p>
+
+        <!-- 3. Zagniezdzanie -->
+        <article class="post">
+            <header class="post-header"></header>
+
+            <section class="container">
+                <div class="gallery"></div>
+            </section>
+        </article>
+    </body>
+</html>
