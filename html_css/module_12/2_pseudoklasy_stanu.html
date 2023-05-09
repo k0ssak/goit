@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 6 - Walidacja formularzy - Pseudoklasy stanu</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                font-family: system-ui;
+            }
+
+            form {
+                max-width: 250px;
+            }
+
+            label {
+                display: block;
+            }
+
+            input {
+                border-radius: 5px;
+                border: 1px solid #cccccc;
+                padding: 10px;
+            }
+
+            label:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+
+            button {
+                background-color: rgb(37, 139, 37);
+                border: 0;
+                color: #fff;
+                padding: 10px 15px;
+                border-radius: 5px;
+                width: 100%;
+            }
+        </style>
+
+        <!-- 1. :disabled -->
+        <!-- <style>
+            input:disabled {
+                background-color: #d3d3d3;
+            }
+        </style> -->
+
+        <!-- 2. :checked -->
+        <!-- <style>
+            input[type='checkbox']:checked + span {
+                color: rgb(21, 95, 58);
+            }
+        </style> -->
+
+        <!-- 3. :in-range, :out-of-range  -->
+        <!-- <style>
+            input:in-range {
+                border-color: rgb(21, 95, 58);
+            }
+
+            input:out-of-range {
+                border-color: red;
+            }
+        </style> -->
+
+        <!-- 4. :required -->
+        <!-- <style>
+            input:required {
+                border-color: red;
+            }
+        </style> -->
+
+        <!-- 5. :valid, :invalid -->
+        <!-- <style>
+            input:valid {
+                background-color: rgb(155, 196, 155);
+            }
+
+            input:invalid {
+                background-color: rgb(228, 172, 172);
+            }
+        </style> -->
+
+        <!-- 6. :placeholder-shown -->
+        <!-- <style>
+            input:placeholder-shown {
+                border-color: #000;
+            }
+        </style> -->
+
+        <!-- 7. composing -->
+        <!-- <style>
+            input:not(:placeholder-shown):required:valid {
+                border-color: green;
+            }
+
+            input:not(:placeholder-shown):required:invalid {
+                border-color: red;
+            }
+        </style> -->
+
+        <!-- 8. :focus-within -->
+        <!-- <style>
+            .controls-group {
+                padding: 15px;
+                border: 2px dashed #cccccc;
+                margin-bottom: 1rem;
+            }
+
+            .controls-group:focus-within {
+                border-color: green;
+            }
+        </style> -->
+    </head>
+    <body>
+        <!-- 1. :disabled -->
+        <!-- <form>
+            <label>
+                Imię
+                <input type="text" name="email" disabled />
+            </label>
+
+            <label>
+                <input type="checkbox" name="pizza" disabled />
+                Chcesz pizzę?
+            </label>
+
+            <label>
+                Wybór
+                <input type="radio" name="choose" disabled />
+                <input type="radio" name="choose" disabled />
+                <input type="radio" name="choose" disabled />
+            </label>
+
+            <label>
+                Kraj
+                <select disabled>
+                    <option>Polska</option>
+                    <option>Niemcy</option>
+                </select>
+            </label>
+
+            <button type="submit">Wyślij</button>
+        </form> -->
+
+        <!-- 2. :checked -->
+        <!-- <form>
+            <label>
+                <input type="checkbox" name="pizza" />
+                <span>Chcesz pizzę?</span>
+            </label>
+
+            <label>
+                <input type="checkbox" name="fries" checked />
+                <span>Chcesz frytki?</span>
+            </label>
+
+            <label>
+                <input type="checkbox" name="burger" />
+                <span>Chcesz burgera?</span>
+            </label>
+
+            <button type="submit">Wyślij</button>
+        </form> -->
+
+        <!-- 3. :in-range, :out-of-range -->
+        <!-- <form>
+            <label>
+                Ilość paczek do wysłania
+                <input type="number" name="amount" min="1" max="5" />
+            </label>
+
+            <button type="submit">Wyślij</button>
+        </form> -->
+
+        <!-- 4. :required -->
+        <!-- <form>
+            <label>
+                Email
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" required />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 5. :valid, :invalid -->
+        <!-- <form>
+            <label>
+                Email
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" required />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 6. :placeholder-shown -->
+        <!-- <form>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="adres email musi mieć znak @" required />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" placeholder="wpisz haslo" required />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 7. composing -->
+        <!-- <form>
+            <label>
+                Email
+                <input type="email" name="email" placeholder="adres email musi mieć znak @" required />
+            </label>
+            <label>
+                Hasło
+                <input type="password" name="password" placeholder="wpisz haslo" required />
+            </label>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+
+        <!-- 8. :focus-within -->
+        <!-- <form>
+            <div class="controls-group">
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="adres email musi mieć znak @" required />
+                </label>
+                <label>
+                    Hasło
+                    <input type="password" name="password" placeholder="wpisz haslo" required />
+                </label>
+            </div>
+
+            <div class="controls-group">
+                <label>
+                    Ulica
+                    <input type="text" name="street" />
+                </label>
+                <label>
+                    Nr domu
+                    <input type="text" name="number" />
+                </label>
+            </div>
+
+            <button type="submit">Zaloguj</button>
+        </form> -->
+    </body>
+</html>

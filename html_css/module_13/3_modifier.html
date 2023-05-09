@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 6 - Metodologia BEM - Modfier</title>
+
+        <!-- 2. Przyklad button -->
+        <style>
+            .btn {
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 12px;
+            }
+
+            .btn--primary {
+                background-color: blue;
+                color: #fff;
+            }
+
+            .btn--secondary {
+                background-color: aquamarine;
+            }
+
+            .btn--l {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .btn--s {
+                font-size: 10px;
+                padding: 3px;
+            }
+        </style>
+
+        <!-- 3. More -->
+        <style>
+            .btn__icon--left {
+                margin-right: 5px;
+            }
+
+            .btn__label--s {
+                font-size: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 1. Modifier -->
+        <div class="block">
+            <div class="block__element"></div>
+
+            <div class="block__element block__element--modifier"></div>
+        </div>
+
+        <!-- 2. Przyklad button -->
+        <a href="https://onet.pl" class="btn btn--s btn--primary">
+            <img class="btn__icon" src="" />
+            <span class="btn__label">kliknij mnie</span>
+        </a>
+
+        <a href="https://onet.pl" class="btn btn--s btn--primary">
+            <span class="btn__label">kliknij mnie</span>
+        </a>
+
+        <!-- 3. More -->
+        <a href="https://onet.pl" class="btn btn--s btn--primary">
+            <img class="btn__icon btn__icon--left" src="" />
+            <span class="btn__label">kliknij mnie</span>
+        </a>
+
+        <a href="https://onet.pl" class="btn btn--s btn--primary">
+            <span class="btn__label btn__label--s">kliknij mnie</span>
+        </a>
+    </body>
+</html>
