@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Moduł 8 - Responsywność - Typy układów</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- 1. media queries - skladnia -->
+        <style>
+            .container {
+                margin: 0 auto 50px;
+                background-color: yellow;
+                padding: 20px;
+            }
+
+            .container--responsive {
+                max-width: 1200px;
+            }
+
+            @media screen and (min-width: 400px) {
+                .container--adaptive {
+                    max-width: 400px;
+                }
+            }
+
+            @media screen and (min-width: 700px) {
+                .container--adaptive {
+                    max-width: 700px;
+                }
+            }
+
+            @media screen and (min-width: 1200px) {
+                .container--adaptive {
+                    max-width: 1200px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container container--responsive">
+            <h2>Responsive container</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores totam ut fugiat, reiciendis temporibus voluptates. Corrupti, earum veritatis
+                mollitia necessitatibus, quo labore laborum exercitationem expedita quidem, tenetur quam officia accusamus!
+            </p>
+        </div>
+
+        <div class="container container--adaptive">
+            <h2>Adaptive container</h2>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores totam ut fugiat, reiciendis temporibus voluptates. Corrupti, earum veritatis
+                mollitia necessitatibus, quo labore laborum exercitationem expedita quidem, tenetur quam officia accusamus!
+            </p>
+        </div>
+    </body>
+</html>

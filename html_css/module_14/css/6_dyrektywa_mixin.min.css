@@ -1,0 +1,13 @@
+.btn-success {
+  display: inline;
+  padding: 15px;
+  color: blue;
+  background-color: green;
+}
+
+.btn-error {
+  display: inline;
+  padding: 10px;
+  color: yellow;
+  background-color: red;
+}/*# sourceMappingURL=6_dyrektywa_mixin.min.css.map */
