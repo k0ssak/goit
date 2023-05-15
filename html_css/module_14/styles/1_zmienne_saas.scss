@@ -1,0 +1,32 @@
+// 2. Zmienne
+// $mainColor: #0bbdf3;
+// $globalSpacing: 15px;
+// $globalFontSize: 14px;
+
+$size: 10px;
+
+.p {
+    font-size: $size;
+}
+
+.div {
+    margin-bottom: $size;
+}
+
+// .heading {
+//     color: $mainColor;
+//     margin-bottom: $globalSpacing;
+//     font-size: $globalFontSize;
+// }
+
+// // 3. Zasieg zmiennych
+$mainColor: #0bbdf3;
+
+p {
+    $mainColor: red;
+    color: $mainColor;
+}
+
+div {
+    color: $mainColor;
+}

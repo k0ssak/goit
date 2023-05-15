@@ -1,0 +1,29 @@
+.btn, .btn-error, .btn-success {
+  display: inline;
+  padding: 15px;
+  color: #fff;
+  background-color: blue;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.btn-error, .btn-success {
+  display: inline;
+  padding: 15px;
+  color: #fff;
+  background-color: blue;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-error {
+  background-color: red;
+}/*# sourceMappingURL=5_dyrektywa_extend.min.css.map */

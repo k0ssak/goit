@@ -1,0 +1,14 @@
+@mixin btn($bgColor, $padding, $color) {
+    display: inline;
+    padding: $padding;
+    color: $color;
+    background-color: $bgColor;
+}
+
+.btn-success {
+    @include btn(green, 15px, blue);
+}
+
+.btn-error {
+    @include btn(red, 10px, yellow);
+}

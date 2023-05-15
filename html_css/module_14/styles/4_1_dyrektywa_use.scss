@@ -1,0 +1,7 @@
+@use 'corners/corners';
+// @use 'corners/corners' as c;
+
+.button {
+    @include corners.rounded;
+    padding: 5px + corners.$radius;
+}

@@ -1,0 +1,30 @@
+$colorPrimary: red;
+$colorSecondary: blue;
+$colorNeutral: grey;
+$colorBackground: yellow;
+
+$themeColors: (
+    'primary': red,
+    'secondary': blue,
+    'neutral': grey,
+    'background': yellow,
+    'success': green,
+);
+
+p {
+    color: map-get($themeColors, 'primary');
+}
+
+@function getColor($key) {
+    @return map-get($themeColors, $key);
+}
+
+p {
+    color: getColor('primary');
+}
+
+@each $name, $color in $themeColors {
+    .btn-#{$name} {
+        background-color: $color;
+    }
+}

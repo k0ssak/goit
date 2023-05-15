@@ -1,0 +1,33 @@
+.btn {
+    display: inline;
+    padding: 15px;
+    color: #fff;
+    background-color: blue;
+}
+
+.btn-success {
+    @extend .btn;
+    background-color: green;
+}
+
+.btn-error {
+    @extend .btn;
+    background-color: red;
+}
+
+%btn {
+    display: inline;
+    padding: 15px;
+    color: #fff;
+    background-color: blue;
+}
+
+.btn-success {
+    @extend %btn;
+    background-color: green;
+}
+
+.btn-error {
+    @extend %btn;
+    background-color: red;
+}

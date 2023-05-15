@@ -1,0 +1,8 @@
+.link:is(:hover, :focus) {
+}
+
+.link {
+    &:is(:hover, :focus) {
+        color: red;
+    }
+}

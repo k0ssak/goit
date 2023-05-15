@@ -1,0 +1,7 @@
+// @each <value> in <list> {}
+
+@each $animal in success, error {
+    .#{$animal}-icon {
+        background-image: url('../images/#{$animal}.png');
+    }
+}
